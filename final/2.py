@@ -6,7 +6,7 @@ df = pd.read_csv('info.csv')
 kval = int(input())
 verifierset = list()
 
-for i in (0, df.shape[0]-1):
+for i in range(0, df.shape[0]):
   (gender, age, membership) = df.iloc[i, 0], df.iloc[i, 1], df.iloc[i, 2]
   info = (gender, age, membership)
   verifierset.append(info)
